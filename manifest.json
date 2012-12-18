@@ -1,22 +1,19 @@
 {
-    "name": "My awesome extension :)",
-    "version": "0.1",
+    "name": "Google Play Music Tab Close Alarm",
+    "version": "1212.1",
     "icons": { 
         "16": "/img/icons/icon_16.png",
         "48": "/img/icons/icon_48.png",
         "128": "/img/icons/icon_128.png" 
     },
 
-    "description": "Yay, I'm so useless.",
-    "permissions": [
-        "geolocation"
-    ],
+    "description": "When listening to music, you'll get a warning before you close the Play Music Tab. Never accidentally close it again.",
+
 
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
+            "matches": ["https://play.google.com/music/listen*"],
             "js": [
-                    "/js/external/jquery.js", 
                     "/js/content_script.js"
                 ]
         }

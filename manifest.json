@@ -1,6 +1,6 @@
 {
     "name": "Google Play Music Tab Close Alarm",
-    "version": "1307.1",
+    "version": "2014.1.0",
     "icons": { 
         "16": "/img/icons/icon_16.png",
         "48": "/img/icons/icon_48.png",
@@ -18,6 +18,9 @@
                 ]
         }
     ],
+"content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",    "background": {
+        "page": "background.html"
+    },
 
     "manifest_version": 2
 }

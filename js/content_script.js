@@ -8,10 +8,12 @@
 
 
   function handleVisibilityChange(event) {
+    // tab not in focus, unset threshold and remove timer
     if (document.webkitHidden) {
       notPromptingThresholdReached = false;
       window.clearTimeout(thresholdTimer);
     } else {
+      // tab in focus - after n MS, consider threshold reached
       thresholdTimer = window.setTimeout(function() {
         notPromptingThresholdReached = true;
       }, THRESHOLD_MS)
@@ -19,6 +21,7 @@
   }
 
   document.addEventListener("webkitvisibilitychange", handleVisibilityChange);
+  // invoke handler once
   handleVisibilityChange()
 
   window.onbeforeunload = function () {

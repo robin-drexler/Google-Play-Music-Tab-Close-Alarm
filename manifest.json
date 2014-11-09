@@ -1,10 +1,10 @@
 {
     "name": "Google Play Music Tab Close Alarm",
-    "version": "2014.1.1",
-    "icons": { 
+    "version": "2014.11.09",
+    "icons": {
         "16": "/img/icons/icon_16.png",
         "48": "/img/icons/icon_48.png",
-        "128": "/img/icons/icon_128.png" 
+        "128": "/img/icons/icon_128.png"
     },
 
     "description": "When listening to music, you'll get a warning before you close the Play Music Tab. Never accidentally close it again.",

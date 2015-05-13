@@ -1,6 +1,6 @@
 (function () {
   window.onbeforeunload = function () {
-    var isMusicRunning = document.querySelector('[data-id=play-pause]').getAttribute('title') == 'Pause',
+    var isMusicRunning = document.querySelector('[data-id=play-pause]').classList.contains('playing'),
       leaveMessage = 'Hey, you\'re playing music.';
 
     chrome.runtime.sendMessage({type: 'beforeunload'});
